@@ -18,8 +18,8 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 .title {
@@ -675,7 +675,7 @@ header .fa-chevron-down {
   height: 50px;
   border-top: white 1px solid;
   margin: 0 auto;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: white;
   text-align: center;
   display: -webkit-box;
@@ -751,6 +751,40 @@ header .fa-chevron-down {
 }
 
 @media (max-width: 768px) {
+  main {
+    display: none;
+  }
+  .for-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2F4550;
+    color: #FFF;
+    text-align: center;
+  }
+  .for-mobile i {
+    display: block;
+    font-size: 10rem;
+    padding-bottom: 30px;
+  }
+  .for-mobile p {
+    padding: 10px 30px;
+    display: block;
+    font-size: 3rem;
+    text-align: justify;
+  }
   header h1 {
     font-size: 5rem;
   }
@@ -759,7 +793,10 @@ header .fa-chevron-down {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
+  .for-mobile {
+    display: none;
+  }
   header .hero-img {
     background-image: url("../img/hero-bg.jpg");
   }
