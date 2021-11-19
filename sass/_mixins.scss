@@ -1,0 +1,39 @@
+@mixin img-card-style {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    // transition: 20s scale;
+}
+
+@mixin info-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    z-index: 50;
+    background-color: $medium-blue;
+    color: $pure-white;
+    opacity: .8;
+    font-size: 2rem;
+    transform: translateX(100%);
+    transition: .5s transform cubic-bezier(0.65, 0.05, 0.36, 1);
+    
+    span {
+        display: none;
+    }
+}
+
+@mixin border-right {
+    border-right: 1px black solid;
+    
+}
