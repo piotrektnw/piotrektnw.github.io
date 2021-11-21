@@ -9,6 +9,11 @@ const sections = document.querySelectorAll('.section');
 const allNavLinks = document.querySelectorAll('.nav-link');
 const devDescription = document.querySelector('.dev-description');
 const selectA = document.querySelector('.select-a');
+const message = document.querySelector('.message');
+const readMessage = document.querySelector('.read-message');
+const contactChevron = document.querySelector('.contact-chevron')
+const contactBg = document.querySelector('.contact-bg')
+const contact = document.querySelector('.contact')
 
 const hideNav = () => {
     nav.classList.remove('show-menu')
@@ -93,6 +98,12 @@ function updateDevDescription() {
     }, 600)
 }
 
+const showMessage = () => {
+    message.classList.toggle('show-msg');
+    contact.classList.toggle('add-padding');
+    contactBg.classList.toggle('show-pic')
+}
+
 details.addEventListener('click', hideDetails);
 menuBtn.addEventListener('click', handleNav);
 currentDate();
@@ -104,3 +115,6 @@ allNavLinks.forEach(navLink => {
 setTimeout(() => {
     updateDevDescription();
 }, 2500);
+
+readMessage.addEventListener('click', showMessage)
+contactChevron.addEventListener('click', showMessage)

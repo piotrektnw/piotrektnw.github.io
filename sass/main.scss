@@ -31,6 +31,10 @@ body {
     color: $dark-blue;
 }
 
+.add-padding {
+    padding: 30px;
+}
+
 // NAV
     .burger-btn {
         display: flex;
@@ -379,9 +383,69 @@ header {
 //END OF TIMELINE - EDUCATION AND EXPERIENCE
 
 // CONTACT
+
+
 .contact {
+    position: relative;
     width: 100%;
-    height: 300px;
+    font-size: 2rem;
+    background-image: url('../img/statement-bg.jpg');
+    background-position: 0 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $pure-white;
+    transition: .5s padding cubic-bezier(0.65, 0.05, 0.36, 1);
+
+    .contact-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 1;
+        transition: .5s opacity cubic-bezier(0.65, 0.05, 0.36, 1);
+    }
+    
+    p, h2 {
+        padding: 10px 0;
+    }
+
+    .message {
+        position: relative;
+        width: 100%;
+        background-color: rgba(0,0,0, .8);
+        padding: 5px 30px 30px 30px;
+        overflow: hidden;
+       height: 65px;
+        transition: .5s height cubic-bezier(0.65, 0.05, 0.36, 1), .5s width cubic-bezier(0.65, 0.05, 0.36, 1);
+        text-align: justify;
+
+        .read-message {
+            display: inline-block;
+            width: 93%;
+            padding-bottom: 20px;
+            font-size: 3rem;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .contact-chevron {
+            width: 5%;
+            font-size: 3rem;
+            text-align: right;
+            cursor: pointer;
+        }
+    }
+    
+    .show-pic {
+        opacity: 0
+    }
+
+    .show-msg {
+        height: 700px;
+        width: 50%;
+       
+    }
 }
 
 //END OF CONTACT
@@ -509,12 +573,8 @@ header {
         align-items: center;
         justify-content: center;
         letter-spacing: 3px;
-        
-
     }
-
 }
-
 
 //END OF FOOTER
 
