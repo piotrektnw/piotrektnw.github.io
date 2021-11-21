@@ -186,7 +186,7 @@ header .fa-chevron-down {
 }
 
 .skills .title {
-  color: white;
+  color: #FFF;
 }
 
 .skills .container .flex-card {
@@ -237,6 +237,7 @@ header .fa-chevron-down {
   z-index: 50;
   background-color: #586F7C;
   color: #FFF;
+  font-weight: bold;
   opacity: .8;
   font-size: 2rem;
   -webkit-transform: translateX(100%);
