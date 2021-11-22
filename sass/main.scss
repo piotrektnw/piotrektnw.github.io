@@ -400,7 +400,7 @@ header {
     position: relative;
     width: 100%;
     font-size: 2rem;
-    // background-image: url('../img/statement-bg.jpg');
+    background-image: url('../img/statement-bg.jpg');
     background-position: 0 20%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -496,7 +496,7 @@ header {
                 .profile-picture {
                     margin: 10px 0 20px 50%;
                     transform: translateX(-50%);
-                    // border-radius: 50%;                    background-image: url('../img/profile.jpg');
+                    border-radius: 50%;                    background-image: url('../img/profile.jpg');
                     width: 50%;
                     height: 50%;
                     background-size: cover;
