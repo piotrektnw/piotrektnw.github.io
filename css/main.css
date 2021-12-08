@@ -849,7 +849,6 @@ header .fa-chevron-down {
     height: 100vh;
     background-color: #2F4550;
     color: #FFF;
-    text-align: center;
   }
   .for-mobile i {
     display: block;
@@ -860,7 +859,7 @@ header .fa-chevron-down {
     padding: 10px 30px;
     display: block;
     font-size: 3rem;
-    text-align: justify;
+    text-align: center;
   }
   header h1 {
     font-size: 5rem;
